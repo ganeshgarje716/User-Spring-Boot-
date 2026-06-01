@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.domain.Sort;
 
 import com.ganesh.entity.User;
 import com.ganesh.repository.UserRepository;
@@ -149,13 +150,19 @@ public class SpringBootUserApplication implements CommandLineRunner{
 		
 		//9
 		
-		UR.deleteAllById(Arrays.asList(52,60,70,80,90,100));
+//		UR.deleteAllById(Arrays.asList(52,60,70,80,90,100));
 		
 
 		
 		//10
 		
 //		UR.deleteAll();
+		
+		
+		
+		//11 Sorting
+		
+		UR.findAll(Sort.by("name").descending()).forEach(i->System.err.println(i));
 		
 		
 	}
