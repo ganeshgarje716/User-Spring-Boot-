@@ -1,6 +1,8 @@
 package com.ganesh;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -100,7 +102,22 @@ public class SpringBootUserApplication implements CommandLineRunner{
 		
 		//2
 		
-		System.out.println(UR.count());
+//		System.out.println(UR.count());
+		
+		
+		
+		//3
+		
+//		Optional<User> id = UR.findById(1);
+//		
+//		System.err.println(id.get());
+		
+		
+		
+		
+		//4
+		
+		UR.findAllById(Arrays.asList(1,3,5,7,9,10,20,30,40,50,60,70,80,90)).forEach(i->System.err.println(i));
 
 		
 		
