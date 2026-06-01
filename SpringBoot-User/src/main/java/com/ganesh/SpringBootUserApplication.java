@@ -136,9 +136,26 @@ public class SpringBootUserApplication implements CommandLineRunner{
 		
 		//7
 		 
-	    UR.save(new User("Rahul", "rahul@gmail.com", "9999", "9876543210", "Hydrabad", 24));
+//	    UR.save(new User("Rahul", "rahul@gmail.com", "9999", "9876543210", "Hydrabad", 24));
+		
+		
+		
+		
+		//8
+		
+//		UR.deleteById(51);
+		
+		
+		
+		//9
+		
+		UR.deleteAllById(Arrays.asList(52,60,70,80,90,100));
 		
 
+		
+		//10
+		
+//		UR.deleteAll();
 		
 		
 	}
