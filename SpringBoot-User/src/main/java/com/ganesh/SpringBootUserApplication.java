@@ -124,7 +124,20 @@ public class SpringBootUserApplication implements CommandLineRunner{
 		
 		//5
 		
-		UR.findAll().forEach(i->System.err.println(i));
+//		UR.findAll().forEach(i->System.err.println(i));
+		
+		
+		
+		//6
+		
+//		System.err.println(UR.existsById(20));
+		
+		
+		
+		//7
+		 
+	    UR.save(new User("Rahul", "rahul@gmail.com", "9999", "9876543210", "Hydrabad", 24));
+		
 
 		
 		
