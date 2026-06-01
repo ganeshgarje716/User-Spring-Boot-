@@ -117,7 +117,14 @@ public class SpringBootUserApplication implements CommandLineRunner{
 		
 		//4
 		
-		UR.findAllById(Arrays.asList(1,3,5,7,9,10,20,30,40,50,60,70,80,90)).forEach(i->System.err.println(i));
+//		UR.findAllById(Arrays.asList(1,3,5,7,9,10,20,30,40,50,60,70,80,90)).forEach(i->System.err.println(i));
+		
+		
+		
+		
+		//5
+		
+		UR.findAll().forEach(i->System.err.println(i));
 
 		
 		
