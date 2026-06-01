@@ -1,5 +1,9 @@
 package com.ganesh.repository;
 
-public class UserRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ganesh.entity.User;
+
+public interface UserRepository extends JpaRepository<User, Integer> {
 
 }
